@@ -1,0 +1,465 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+header {
+  background: url(Screenshot\ \(161\).png) center/cover no-repeat;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10rem 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-decoration:underline;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+header h1 {
+  font-size: 3.9rem;
+  margin-bottom: 1rem;
+}
+nav {
+  background-color: rgb(38, 71, 82);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+.menu li {
+  margin: 0 1rem;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: #161616;
+}
+main {
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 60px;
+}
+.wisata {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.wisata h2 {
+  font-size: 26px;
+  margin-bottom: 1.3rem;
+  width: 100%;
+}
+.wisata-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+  max-width: 700px;
+  margin-right: 10px;
+  margin-left: 18px;
+  padding: 1.1rem;
+  border-radius: 7px;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.wisata-item:hover {
+  transform: scale(1.06);
+}
+
+.wisata-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.wisata-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.wisata-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.wisata-item button {
+  background-color: #4a6aaf;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.wisata-item button:hover {
+  background-color: #406e68;
+  color: white;
+}
+.destinasi {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.destinasi h2 {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.destinasi-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+  max-width: 330px;
+  margin-right: 8px;
+  margin-left: 18px;
+  padding: 1.1rem;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.destinasi-item:hover {
+  transform: scale(1.04);
+}
+
+.destinasi-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.destinasi-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.destinasi-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.destinasi-item button {
+  background-color: #4a6aaf;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.destinasi-item button:hover {
+  background-color: #406e68;
+  color: white;
+}
+
+
+.pengguna {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.pengguna h2 {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.pengguna-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+  max-width: 1300px;
+  margin-right: 8px;
+  margin-left: 18px;
+  padding: 1.1rem;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.pengguna-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.pengguna-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.pengguna-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.promo {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.promo h2 {
+  font-size: 26px;
+  margin-bottom: 1.1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.promo-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+  max-width: 1200px;
+  margin-right: 8px;
+  margin-left: 18px;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+.promo-item img {
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 17px;
+  margin-right: 6px;
+}
+.promo-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.promo-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.paket-wisata {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.paket-wisata h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+.paket-wisata-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.paket-wisata-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex: 1;
+  width: calc(33.33%-1rem);
+  margin-bottom: 1rem;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.paket-wisata-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.paket-wisata-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.paket-wisata-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.paket-wisata-item button {
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.paket-wisata-item button:hover {
+  background-color: #555;
+  color: rgb(255, 253, 253);
+}
+.kenapamemilih {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.kenapamemilih h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.kenapamemilih-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+  max-width: 300px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+}
+.kontak {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.kontak h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+.kontak-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.kontak-info {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+}
+.kontak-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.kontak-item i {
+  font-size: 24px;
+  color: #ffcc00;
+  margin-right: 10px;
+}
+.kontak-text {
+  flex: 1;
+}
+.kontak-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.kontak-form {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+}
+.kontak-form h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.form-group textarea {
+  height: 150px;
+}
+button[type="submit"] {
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+  color: white;
+}
+footer {
+  text-align: center;
+  background-color: rgb(79, 91, 95);
+  color: white;
+  padding: 1rem 0;
+}
+
+.popup-image {
+  display: none; 
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  
+}
+
+.popup-image img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+}
+
+.popup-image span {
+  position: relative;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-image span:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
